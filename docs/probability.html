@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 5 Probability | Clinical Inquiry</title>
+  <meta name="description" content="This is the first step towards creating a book for Clinical Inquiry based on a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 5 Probability | Clinical Inquiry" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This is the first step towards creating a book for Clinical Inquiry based on a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  <meta name="github-repo" content="scollinspt/Clinical_Inquiry" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 5 Probability | Clinical Inquiry" />
+  
+  <meta name="twitter:description" content="This is the first step towards creating a book for Clinical Inquiry based on a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  
+
+<meta name="author" content="Sean Collins" />
+
+
+<meta name="date" content="2022-04-02" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="causation-models-stories.html"/>
+<link rel="next" href="statistical-inference-induction.html"/>
+<script src="libs/header-attrs-2.10.6/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Clinical Inquiry</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a>
+<ul>
+<li class="chapter" data-level="0.1" data-path="index.html"><a href="index.html#about-the-dpt-program-at-psu"><i class="fa fa-check"></i><b>0.1</b> About the DPT program at PSU</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i>Introduction</a></li>
+<li class="chapter" data-level="" data-path="part1.html"><a href="part1.html"><i class="fa fa-check"></i>Part I</a></li>
+<li class="chapter" data-level="1" data-path="fallacies-bias.html"><a href="fallacies-bias.html"><i class="fa fa-check"></i><b>1</b> Fallacies &amp; Bias</a></li>
+<li class="chapter" data-level="2" data-path="inference-decision-making.html"><a href="inference-decision-making.html"><i class="fa fa-check"></i><b>2</b> Inference &amp; Decision Making</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="inference-decision-making.html"><a href="inference-decision-making.html#dynamic-inference"><i class="fa fa-check"></i><b>2.1</b> Dynamic Inference</a></li>
+<li class="chapter" data-level="2.2" data-path="inference-decision-making.html"><a href="inference-decision-making.html#deductive-inference"><i class="fa fa-check"></i><b>2.2</b> Deductive Inference</a></li>
+<li class="chapter" data-level="2.3" data-path="inference-decision-making.html"><a href="inference-decision-making.html#inductive-inference"><i class="fa fa-check"></i><b>2.3</b> Inductive Inference</a>
+<ul>
+<li class="chapter" data-level="2.3.1" data-path="inference-decision-making.html"><a href="inference-decision-making.html#examples"><i class="fa fa-check"></i><b>2.3.1</b> Examples</a></li>
+<li class="chapter" data-level="2.3.2" data-path="inference-decision-making.html"><a href="inference-decision-making.html#summary"><i class="fa fa-check"></i><b>2.3.2</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="inference-decision-making.html"><a href="inference-decision-making.html#abductive-inference"><i class="fa fa-check"></i><b>2.4</b> Abductive Inference</a>
+<ul>
+<li class="chapter" data-level="2.4.1" data-path="inference-decision-making.html"><a href="inference-decision-making.html#examples-1"><i class="fa fa-check"></i><b>2.4.1</b> Examples</a></li>
+<li class="chapter" data-level="2.4.2" data-path="inference-decision-making.html"><a href="inference-decision-making.html#summary-1"><i class="fa fa-check"></i><b>2.4.2</b> Summary</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="philosophical-inquiry-of-practice.html"><a href="philosophical-inquiry-of-practice.html"><i class="fa fa-check"></i><b>3</b> Philosophical Inquiry of Practice</a></li>
+<li class="chapter" data-level="4" data-path="causation-models-stories.html"><a href="causation-models-stories.html"><i class="fa fa-check"></i><b>4</b> Causation, Models &amp; Stories</a></li>
+<li class="chapter" data-level="5" data-path="probability.html"><a href="probability.html"><i class="fa fa-check"></i><b>5</b> Probability</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="probability.html"><a href="probability.html#probability-introduction"><i class="fa fa-check"></i><b>5.1</b> Probability introduction</a>
+<ul>
+<li class="chapter" data-level="5.1.1" data-path="probability.html"><a href="probability.html#state-space-sample-space"><i class="fa fa-check"></i><b>5.1.1</b> State space (sample space)</a></li>
+<li class="chapter" data-level="5.1.2" data-path="probability.html"><a href="probability.html#probability-is-bound-between-0-and-1"><i class="fa fa-check"></i><b>5.1.2</b> Probability is bound between 0 and 1</a></li>
+<li class="chapter" data-level="5.1.3" data-path="probability.html"><a href="probability.html#certainty-and-uncertainty"><i class="fa fa-check"></i><b>5.1.3</b> Certainty and uncertainty</a></li>
+<li class="chapter" data-level="5.1.4" data-path="probability.html"><a href="probability.html#connection-to-deductive-logic"><i class="fa fa-check"></i><b>5.1.4</b> Connection to deductive logic</a></li>
+<li class="chapter" data-level="5.1.5" data-path="probability.html"><a href="probability.html#using-sets-as-probability-spaces"><i class="fa fa-check"></i><b>5.1.5</b> Using Sets as “Probability Spaces”</a></li>
+<li class="chapter" data-level="5.1.6" data-path="probability.html"><a href="probability.html#conditional-probability"><i class="fa fa-check"></i><b>5.1.6</b> Conditional probability</a></li>
+<li class="chapter" data-level="5.1.7" data-path="probability.html"><a href="probability.html#causation-connections"><i class="fa fa-check"></i><b>5.1.7</b> Causation connections</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="probability.html"><a href="probability.html#notes-and-thoughts-on-chapter-3-probability-in-the-clinical-encounter"><i class="fa fa-check"></i><b>5.2</b> Notes and thoughts on Chapter 3: Probability in the clinical encounter</a>
+<ul>
+<li class="chapter" data-level="5.2.1" data-path="probability.html"><a href="probability.html#uncertainty-and-probability-in-the-single-case"><i class="fa fa-check"></i><b>5.2.1</b> 3.1 Uncertainty and Probability in the Single Case</a></li>
+<li class="chapter" data-level="5.2.2" data-path="probability.html"><a href="probability.html#probability-from-statistics-frequentism"><i class="fa fa-check"></i><b>5.2.2</b> 3.2 Probability from Statistics: Frequentism</a></li>
+<li class="chapter" data-level="5.2.3" data-path="probability.html"><a href="probability.html#probability-as-degree-of-belief---subjective-credence"><i class="fa fa-check"></i><b>5.2.3</b> 3.3 Probability as Degree of Belief - Subjective Credence</a></li>
+<li class="chapter" data-level="5.2.4" data-path="probability.html"><a href="probability.html#probability-as-dispositional-and-intrinsic-properties"><i class="fa fa-check"></i><b>5.2.4</b> 3.4 Probability as Dispositional and Intrinsic Properties</a></li>
+<li class="chapter" data-level="5.2.5" data-path="probability.html"><a href="probability.html#propensities-and-the-clinic"><i class="fa fa-check"></i><b>5.2.5</b> 3.5 Propensities and the Clinic</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="statistical-inference-induction.html"><a href="statistical-inference-induction.html"><i class="fa fa-check"></i><b>6</b> Statistical Inference (Induction)</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="statistical-inference-induction.html"><a href="statistical-inference-induction.html#confidence-intervals-ci"><i class="fa fa-check"></i><b>6.1</b> Confidence Intervals (CI)</a>
+<ul>
+<li class="chapter" data-level="6.1.1" data-path="statistical-inference-induction.html"><a href="statistical-inference-induction.html#general-equations"><i class="fa fa-check"></i><b>6.1.1</b> General equations</a></li>
+<li class="chapter" data-level="6.1.2" data-path="statistical-inference-induction.html"><a href="statistical-inference-induction.html#ci-for-a-proportion"><i class="fa fa-check"></i><b>6.1.2</b> CI for a Proportion</a></li>
+<li class="chapter" data-level="6.1.3" data-path="statistical-inference-induction.html"><a href="statistical-inference-induction.html#ci-for-a-mean"><i class="fa fa-check"></i><b>6.1.3</b> CI for a Mean</a></li>
+<li class="chapter" data-level="6.1.4" data-path="statistical-inference-induction.html"><a href="statistical-inference-induction.html#ci-to-evaluate-differences"><i class="fa fa-check"></i><b>6.1.4</b> CI to evaluate differences</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="bayesian-inference.html"><a href="bayesian-inference.html"><i class="fa fa-check"></i><b>7</b> Bayesian Inference</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="bayesian-inference.html"><a href="bayesian-inference.html#preliminaries"><i class="fa fa-check"></i><b>7.1</b> Preliminaries</a>
+<ul>
+<li class="chapter" data-level="7.1.1" data-path="bayesian-inference.html"><a href="bayesian-inference.html#contingency-table"><i class="fa fa-check"></i><b>7.1.1</b> Contingency Table</a></li>
+<li class="chapter" data-level="7.1.2" data-path="bayesian-inference.html"><a href="bayesian-inference.html#sensitivity-specificity"><i class="fa fa-check"></i><b>7.1.2</b> Sensitivity / Specificity</a></li>
+<li class="chapter" data-level="7.1.3" data-path="bayesian-inference.html"><a href="bayesian-inference.html#positive-likelihood-ratio"><i class="fa fa-check"></i><b>7.1.3</b> Positive Likelihood Ratio</a></li>
+<li class="chapter" data-level="7.1.4" data-path="bayesian-inference.html"><a href="bayesian-inference.html#negative-likelihood-ratio"><i class="fa fa-check"></i><b>7.1.4</b> Negative Likelihood Ratio</a></li>
+</ul></li>
+<li class="chapter" data-level="7.2" data-path="bayesian-inference.html"><a href="bayesian-inference.html#bayes-formula"><i class="fa fa-check"></i><b>7.2</b> Bayes Formula</a>
+<ul>
+<li class="chapter" data-level="7.2.1" data-path="bayesian-inference.html"><a href="bayesian-inference.html#alternative-format"><i class="fa fa-check"></i><b>7.2.1</b> Alternative format</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="probability-logic.html"><a href="probability-logic.html"><i class="fa fa-check"></i><b>8</b> Probability Logic</a></li>
+<li class="chapter" data-level="9" data-path="complexity.html"><a href="complexity.html"><i class="fa fa-check"></i><b>9</b> Complexity</a></li>
+<li class="chapter" data-level="10" data-path="stories.html"><a href="stories.html"><i class="fa fa-check"></i><b>10</b> Stories</a></li>
+<li class="chapter" data-level="" data-path="part2.html"><a href="part2.html"><i class="fa fa-check"></i>Part II</a></li>
+<li class="chapter" data-level="" data-path="part3.html"><a href="part3.html"><i class="fa fa-check"></i>Part III</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Clinical Inquiry</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="probability" class="section level1" number="5">
+<h1><span class="header-section-number">Chapter 5</span> Probability</h1>
+<div id="probability-introduction" class="section level2" number="5.1">
+<h2><span class="header-section-number">5.1</span> Probability introduction</h2>
+<div id="state-space-sample-space" class="section level3" number="5.1.1">
+<h3><span class="header-section-number">5.1.1</span> State space (sample space)</h3>
+<p>An event space is often denoted by sigma (<span class="math inline">\(\Sigma\)</span>) and contains all sets of outcomes.</p>
+<p>A sample space of an experiment is denoted by omega (<span class="math inline">\(\Omega\)</span>) and contains all possible outcomes.</p>
+<p>We will usually be dealing with <span class="math inline">\(\Omega\)</span>, but for something like a 6 sided dice we can use <span class="math inline">\(\Sigma\)</span>.</p>
+<p>If <span class="math inline">\(E\)</span> defines an event, (say rolling a 6 on a dice), then {1, 2, 3, 4, 5, 6} is the event space (all sets of outcomes)</p>
+<p><span class="math inline">\(P(E) = \frac{E}{\Sigma}\)</span></p>
+<p><span class="math inline">\(P(rolling \space a\space 6) = \frac{rolling \space a\space 6}{6} = \frac{1}{6}\)</span></p>
+<p>You expect a 6 about <span class="math inline">\(\frac{1}{6}\)</span>. What is an unexpected outcome?</p>
+</div>
+<div id="probability-is-bound-between-0-and-1" class="section level3" number="5.1.2">
+<h3><span class="header-section-number">5.1.2</span> Probability is bound between 0 and 1</h3>
+<p><span class="math inline">\(0 \le P(E) \le 1\)</span></p>
+</div>
+<div id="certainty-and-uncertainty" class="section level3" number="5.1.3">
+<h3><span class="header-section-number">5.1.3</span> Certainty and uncertainty</h3>
+<p>Certainty includes <span class="math inline">\(P(E) = 0\)</span> and <span class="math inline">\(P(E) = 1\)</span></p>
+<p>Therefore the probability of an uncertain event is <span class="math inline">\(0 &lt; P(E) &lt; 1\)</span> (particular)</p>
+<p>Therefore the probability of all uncertain events are <span class="math inline">\(0 &lt; P(E) &lt; 1\)</span> (universal)</p>
+</div>
+<div id="connection-to-deductive-logic" class="section level3" number="5.1.4">
+<h3><span class="header-section-number">5.1.4</span> Connection to deductive logic</h3>
+<p>If <span class="math inline">\(E\)</span> is <span class="math inline">\(TRUE\)</span>, then <span class="math inline">\(P(E) = 1\)</span></p>
+<p>If <span class="math inline">\(E\)</span> is <span class="math inline">\(FALSE\)</span>, then <span class="math inline">\(P(E) = 0\)</span></p>
+</div>
+<div id="using-sets-as-probability-spaces" class="section level3" number="5.1.5">
+<h3><span class="header-section-number">5.1.5</span> Using Sets as “Probability Spaces”</h3>
+<p>Recall:</p>
+<ul>
+<li><span class="math inline">\(E \subseteq F\)</span> is that E is a “subset” of F</li>
+<li><span class="math inline">\(E \cap F\)</span> is set intersection and is similar to logical “and” (<span class="math inline">\(\land\)</span>)</li>
+<li><span class="math inline">\(E \cup F\)</span> is set union and is similar to logical “or” (<span class="math inline">\(\lor\)</span>)</li>
+</ul>
+<p>If <span class="math inline">\(E \subseteq F\)</span>, then <span class="math inline">\(P(E) \le P(F)\)</span></p>
+<p>If <span class="math inline">\(E \cap F\)</span>, then <span class="math inline">\(P(E \lor F) = P(E)+P(F)\)</span></p>
+</div>
+<div id="conditional-probability" class="section level3" number="5.1.6">
+<h3><span class="header-section-number">5.1.6</span> Conditional probability</h3>
+<p><span class="math inline">\(P(E \mid F)\)</span> is the <span class="math inline">\(P(E)\)</span> “given that” <span class="math inline">\(P(F) = 1\)</span> or you could say <span class="math inline">\(F\)</span> is <span class="math inline">\(TRUE\)</span></p>
+<p>Therefore:</p>
+<p>If <span class="math inline">\(E \subseteq F\)</span>, then <span class="math inline">\(P(F \mid E) = 1\)</span></p>
+<p>If <span class="math inline">\(E \cap F = 0\)</span>, then <span class="math inline">\(P(E \mid F) = 0\)</span></p>
+</div>
+<div id="causation-connections" class="section level3" number="5.1.7">
+<h3><span class="header-section-number">5.1.7</span> Causation connections</h3>
+<p>If <span class="math inline">\(E\)</span> causes <span class="math inline">\(F\)</span> we can use the notation <span class="math inline">\(E \rightarrow F\)</span>;</p>
+<p>Then it is true that <span class="math inline">\(P(F \mid E) \ge P(F \mid \neg E)\)</span> (note that <span class="math inline">\(\neg\)</span> means “not”)</p>
+<p>This is the notation for Hill’s criteria, “strength of association” and is consistent with the statement: “causation implies correlation,” but notice that it is inconsistent with the statement “correlation implies causation” (as you have learned, correlation does not imply causation).</p>
+</div>
+</div>
+<div id="notes-and-thoughts-on-chapter-3-probability-in-the-clinical-encounter" class="section level2" number="5.2">
+<h2><span class="header-section-number">5.2</span> Notes and thoughts on Chapter 3: Probability in the clinical encounter</h2>
+<p>Notes and thoughts on Chapter 3 from the book: (Anjum, R. L., Copeland, S., &amp; Rocca, E. (2020). Rethinking causality, complexity and evidence for the unique patient: a CauseHealth Resource for healthcare professionals and the clinical encounter (p. 241). Springer Nature.)[<a href="https://link.springer.com/book/10.1007%2F978-3-030-41239-5" class="uri">https://link.springer.com/book/10.1007%2F978-3-030-41239-5</a>]</p>
+<div id="uncertainty-and-probability-in-the-single-case" class="section level3" number="5.2.1">
+<h3><span class="header-section-number">5.2.1</span> 3.1 Uncertainty and Probability in the Single Case</h3>
+<p>A goal of this book - and indeed of all clinical inquiry - is to consider the probability that intervention <span class="math inline">\(X\)</span> will work this time for this patient</p>
+<p>Note that the probability that <span class="math inline">\(X\)</span> “will work” this time for this patient is a conditional probability (let’s take <span class="math inline">\(P(X)\)</span> to be the probability that intervention <span class="math inline">\(X\)</span> works).</p>
+<p>Therefore, <span class="math inline">\(P(X \mid p_i)\)</span>, is the probability that <span class="math inline">\(X\)</span> will occur (and <span class="math inline">\(X\)</span> is that intervention <span class="math inline">\(X\)</span> will work) given <span class="math inline">\(p_i\)</span> (note that I’m using <span class="math inline">\(p_i\)</span> as notation for “this time for this patient”).</p>
+<p>For one moment - consider what it means to say an intervention works? It means that an outcome has been achieved. If you have a headache, and you take an Tylenol capsule, you consider that it works if your headache goes away. That is an outcome indicating the intervention worked.</p>
+<p>We can also break <span class="math inline">\(X\)</span> into a conditional probability, since <span class="math inline">\(P(X)\)</span> is the probability that intervention <span class="math inline">\(I\)</span> is effective; and since <span class="math inline">\(I\)</span> being effective depends on <span class="math inline">\(O\)</span>, the outcome:</p>
+<p><span class="math inline">\(P(X) = P(O \mid I)\)</span> (the probability of <span class="math inline">\(X\)</span> being effective is the probability of <span class="math inline">\(O\)</span> given <span class="math inline">\(I\)</span>)</p>
+<p>Notice that this conditional probability <span class="math inline">\(P(O \mid I)\)</span> is equivalent to the causal claim: <span class="math inline">\(I \rightarrow O\)</span></p>
+<div id="where-does-this-probability-come-from-what-does-it-represent-what-do-we-mean-by-it" class="section level4" number="5.2.1.1">
+<h4><span class="header-section-number">5.2.1.1</span> Where does this probability come from? What does it represent? What do we mean by it?</h4>
+</div>
+</div>
+<div id="probability-from-statistics-frequentism" class="section level3" number="5.2.2">
+<h3><span class="header-section-number">5.2.2</span> 3.2 Probability from Statistics: Frequentism</h3>
+<p>Frequentism is the probability that you’re familiar with from statistics. It is considered “objective” in that it is based on measurements of observations. These probabilities are often estimated from samples in an attempt to understand something about the population. This is the process of statistical inference we’ll talk about soon, and is “induction” as we’ve already discussed.</p>
+<p>The assumption is that as the sample size (<span class="math inline">\(n\)</span>) gets larger we are more confident in the estimate:</p>
+<p>As <span class="math inline">\(n_{sample}\)</span> approaches <span class="math inline">\(n_{population}\)</span> we are more confident in the estimate of the population (and thus maybe “universal”) probability.</p>
+<p>We’ll talk a lot more next week about confidence in these estimates when we discuss statistical inference using “confidence intervals.”</p>
+<p>Note that estimates are both variable and uncertain. Variability is part of their behavior. In fact, variability says something about the events.</p>
+<div id="evidence-based-approaches" class="section level4" number="5.2.2.1">
+<h4><span class="header-section-number">5.2.2.1</span> 3.2.1 Evidence based approaches:</h4>
+<p>Usually rely on estimates described from samples. The issue, and challenge, is applying these estimates to apatient that was not part of that sample.</p>
+</div>
+<div id="randomization-inclusion-and-exclusion-criteria-in-population-sample-trials" class="section level4" number="5.2.2.2">
+<h4><span class="header-section-number">5.2.2.2</span> 3.2.2 Randomization, Inclusion and Exclusion Criteria in population (sample) trials:</h4>
+<p>Used to reduce bias.</p>
+<p>Bias associated with unknown confounders (randomization)</p>
+<p>Bias associated with known confounders (inclusion and exclusion criteria)</p>
+</div>
+<div id="internal-and-external-validity-of-causal-claims-from-rcts" class="section level4" number="5.2.2.3">
+<h4><span class="header-section-number">5.2.2.3</span> Internal and external validity of causal claims from RCTs:</h4>
+<p>Causal claims from RCTs are statements of whether some intervention is effective (<span class="math inline">\(X\)</span>).</p>
+<p><strong>Internal Validity</strong></p>
+<p>If <span class="math inline">\(X\)</span> is determined to be <span class="math inline">\(TRUE\)</span> for a sample, we can consider <span class="math inline">\(X \subseteq S\)</span> which means <span class="math inline">\(X\)</span> as a characteristic is one of the characteristics of the sample <span class="math inline">\(S\)</span>.</p>
+<p>Threats to internal validity impact whether the study actually demonstrated what they claim to have demonstrated.</p>
+<p><strong>External Validity</strong></p>
+<p>Then we need to consider whether the sample is a subset of the population (whether the characteristics of the sample are true for the population: <span class="math inline">\(S \subseteq P\)</span></p>
+<p>Threats to external validity impact whether the findings of the study in this sample, apply to the population (related to statistical inference and induction)</p>
+<p>Overall: <span class="math inline">\((X \subseteq S) \land (S \subseteq P) \Rightarrow (X \subseteq P)\)</span></p>
+<p>Which means that if X is true for the sample, and the sample reflects the population, then X is true for the population (transitivity).</p>
+<p>The mission of this book, and the project from which is comes (CauseHealth), and my work for the past 17 years or so, has been dealing with the fact that the patient you’re working with (<span class="math inline">\(p_i\)</span>) is not in the sample, and not necessarily in the population.</p>
+<p>Just because: <span class="math inline">\((X \subseteq S) \land (S \subseteq P) \Rightarrow (X \subseteq P)\)</span> is true (and that is usually uncertain)</p>
+<p>It does not mean that:</p>
+<p><span class="math inline">\((X \subseteq P) \land (p_i \subseteq P) \Rightarrow (X \subseteq p_i)\)</span></p>
+<p>In fact:</p>
+<p><span class="math inline">\((X \subseteq P) \land (p_i \subseteq P) \nRightarrow (X \subseteq p_i)\)</span></p>
+</div>
+</div>
+<div id="probability-as-degree-of-belief---subjective-credence" class="section level3" number="5.2.3">
+<h3><span class="header-section-number">5.2.3</span> 3.3 Probability as Degree of Belief - Subjective Credence</h3>
+<p>Three things:
+First, don’t conflate conditional probabilities with “subjective”
+Second, don’t conflate Bayesian probabilities or inference with “subjective”
+Third, don’t make as big a deal of “objective” and “subjective” probabilities as they do in this chapter.</p>
+<p>As you will come to appreciate, all objective probabilities are obtained with some subjectivity; and all subjective probabilities are founded in some sort of objectivity.</p>
+<p>You’ll also come to appreciate that all causal claims can be considered as conditional probability; and since all clinical practice is based on causal claims, then all clinical practice is based on conditional probabilities. Every question you ask, every action you take is because whatever you know “right now” is adjusted based on “what you have just learned.” Meaning, you’re always adjusting your belief / understanding / knowledge based on new information - - which is the same thing as saying you’re always using conditional probabilities.</p>
+<div id="updating-belief---as-stated-above-absolutely-unavoidable-if-you-want-to-be-a-good-clinician" class="section level4" number="5.2.3.1">
+<h4><span class="header-section-number">5.2.3.1</span> 3.3.1 Updating belief - as stated above, absolutely unavoidable if you want to be a good clinician</h4>
+</div>
+<div id="understanding-the-basic-bayesian-formula---to-be-covered-in-chapter-7" class="section level4" number="5.2.3.2">
+<h4><span class="header-section-number">5.2.3.2</span> 3.3.2 Understanding the basic Bayesian formula - to be covered in Chapter 7</h4>
+</div>
+<div id="uncertainty-as-a-lack-of-knowledge" class="section level4" number="5.2.3.3">
+<h4><span class="header-section-number">5.2.3.3</span> 3.3.3 Uncertainty as a lack of knowledge</h4>
+<p>Here I believe they are overstating the difference between ontology and epistemology.</p>
+<p>There is variability in an event <span class="math inline">\(E\)</span>, we try to figure out why, but whether it is ontological or epistemological may not be reconciled; this does not change the value of knowing what we can find out.</p>
+</div>
+</div>
+<div id="probability-as-dispositional-and-intrinsic-properties" class="section level3" number="5.2.4">
+<h3><span class="header-section-number">5.2.4</span> 3.4 Probability as Dispositional and Intrinsic Properties</h3>
+<p>Provides some language - I’m honestly not yet sure how it benefits the overall goal.</p>
+<p>For example, I think we’ve always thought of probabilities are reflection the “propensity” of an event. Some of that is “intrinsic” to the characteristics of the event itself, some of it is due to variability of other factors.</p>
+<p>Once again we see that the purpose of the book includes a conditional probability: “The individual propensities of a single patient, treatment or context are given by it’s unique combination of dispositions and the dispositions’ degree of tendency (propensity) toward particular outcomes in that individual case.”</p>
+<p><span class="math inline">\(P((O \mid I) \mid p_i)\)</span></p>
+<p>The probability of an outcome given the intervention, given this time for this patient.</p>
+</div>
+<div id="propensities-and-the-clinic" class="section level3" number="5.2.5">
+<h3><span class="header-section-number">5.2.5</span> 3.5 Propensities and the Clinic</h3>
+<p>Useful with consideration to the notes above. How usual is yet to be determined (at least in my opinion).</p>
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="causation-models-stories.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="statistical-inference-induction.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/scollinspt/Clinical_Inquiry/blob/main/index.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["Clinical Inquiry.pdf", "Clinical Inquiry.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "section"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
