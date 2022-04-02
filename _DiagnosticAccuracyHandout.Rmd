@@ -1,0 +1,86 @@
+---
+title: "Connecting Pathophysiology Concepts to Diagnostic Accuracy"
+author: "Sean Collins"
+date: "6/07/2017"
+output:
+  word_document: default
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Causation underlying conditional probability
+
+- Definite cause ($D_1 \rightarrow S_1$)
+	- $P(S_1|D_1) = 1$
+- Probable cause ($+D \rightarrow +S$)
+ 	- $P(S_1|D_1) > P(S_1|D_0)$ 
+ 
+## Conditional probability underlying pathophysiology
+
+- Etiology (a cause of disease) 
+	- $E_1 \rightarrow D_1$
+	- $P(D_1|E_1) > P(D_1|E_0)$ (assuming a probable cause)
+- Risk factor (can be an etiology, can cause an etiology, or both (confounding))
+	- $R_1 \rightarrow D_1 \vee E_1$ 
+	- $P(D_1 \vee E_1|R_1) > P(D_1 \vee E_1|R_0)$ (assuming a probable cause)
+- Pathogenesis (mechanisms underling the connection between the causal events and the disease state)
+- Clinical manifestations
+	- Symptoms (what people feel)
+	- Signs
+	- Consequences (often are etiologies and/or pathogenesis of other diseases, not necessarily a clinical manifestation)
+- Exacerbating factor ($+D \rightarrow +S$)
+	- $P(S_1|D_1 \wedge F_1) > P(S_1|D_1)$
+
+
+## Contingency Table
+
+|                | $D_1$            | $D_0$                      |
+|:--------------:|:-------------:|:-----------------------:|
+| $S_1$             | True Positive (TP) (a) | False Positive (FP) (b)|
+| $S_0$             | False Negative (FN) (c) | True Negative (TN) (d) |
+
+
+
+## Sensitivity / Specificity
+
+Sensitivity: $P(S_1|D_1)=\dfrac{a}{a+c}$ (Rate of True Positives)
+
+Specificity: $P(S_0|D_0)=\dfrac{d}{b+d}$ (Rate of True Negatives)
+
+1 - Sensitivity: $P(S_0|D_1)=\dfrac{c}{a+c}$ (Rate of False Negatives)
+
+1 - Specificity: $P(S_1|D_0)=\dfrac{b}{b+d}$ (Rate of False Positives)
+
+## Positive Likelihood Ratio
+
+$+LR=\dfrac{Sensitivity}{1-Specificity}$
+
+$+LR=\dfrac{P(S_1|D_1}{1-P(S_0|D_0)}$
+
+$+LR= \dfrac{a(b+d)}{b(a+c)}$
+
+## Negative Likelihood Ratio
+
+$-LR=\dfrac{1-Sensitivity}{Specificity}$
+
+$-LR=\dfrac{1-P(S)1|D_1)}{P(S_0|D_0}$
+
+$-LR= \dfrac{c(b+d)}{d(a+c)}$ 
+
+## Bayes Formula
+
+$P(D_1|S_1)=\dfrac{P(S_1|D_1)\cdot P(D_1}{P(S_1)}$
+
+The $P(D_1)$ and $P(S_1)$ are the "priors" - or "baseline" probabilities of the disease and the sign
+
+## References / resources for further study
+
+Get the Diagnosis Website: http://getthediagnosis.org/
+
+SAMIAM: http://reasoning.cs.ucla.edu/samiam/ 
+
+DAGitty: http://www.dagitty.net/ 
