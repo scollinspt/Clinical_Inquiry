@@ -11,7 +11,6 @@ biblio-style: apalike
 link-citations: yes
 github-repo: scollinspt/Clinical_Inquiry
 description: "This is the first step towards creating a book for Clinical Inquiry based on a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook."
-
 ---
 
 ```{r include=FALSE}
@@ -20,6 +19,7 @@ knitr::write_bib(c(
   .packages(), 'bookdown', 'knitr', 'rmarkdown'
 ), 'packages.bib')
 ```
+
 
 # Preface {-#preface}
 
@@ -41,7 +41,7 @@ Clinical Inquiry as a system includes clinical reasoning so it is helpful to def
 
 
 
-# (PART) Part I: Causation & Inference {-#part1}
+# Part I {-#part1}
 
 
 
@@ -473,7 +473,7 @@ Note: $SE_1$ is the SE for group 1; and $SE_2$ is the SE for group 2.
 $95\%CI=difference \space between \space samples \pm z \times (SE \space for \space a \space Difference)$
 
 
-# Bayesian Inference (Abduction)
+# Bayesian Inference
 
 ## Preliminaries
 
@@ -529,7 +529,7 @@ The $P(\neg D)$ and $P(\neg S)$ are the "priors" - or "baseline" probabilities o
 
 
 
-# Probability Logic (Deduction)
+# Probability Logic
 
 
 
@@ -537,15 +537,12 @@ The $P(\neg D)$ and $P(\neg S)$ are the "priors" - or "baseline" probabilities o
 
 
 
-# Stories of Models & Models of Stories
+# Stories
 
 
 
-# (PART) Part II: Study Design  {-#part2}
+# Part II {-#part2}
 
 
 
-# (PART) Part III: Models, Reviews & Guidelines {-#part3}
-
-
-
+# Part III {-#part3}

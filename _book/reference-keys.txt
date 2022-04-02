@@ -46,7 +46,7 @@ general-equations
 ci-for-a-proportion
 ci-for-a-mean
 ci-to-evaluate-differences
-bayesian-inference-abduction
+bayesian-inference
 preliminaries
 contingency-table
 sensitivity-specificity
@@ -54,6 +54,6 @@ positive-likelihood-ratio
 negative-likelihood-ratio
 bayes-formula
 alternative-format
-probability-logic-deduction
+probability-logic
 complexity
-stories-of-models-models-of-stories
+stories
