@@ -41,12 +41,6 @@ Clinical Inquiry as a system includes clinical reasoning so it is helpful to def
 
 
 
-
-[1] Jette, Alan M. "A Quantitative Analysis of Research Publications in Physical Therapy Journals-Invited Commentary." Physical Therapy 83, no. 2 (2003): 131-131.
-
-[2] Collins, Sean M. "Complex system approaches: could they enhance the relevance of clinical research?." Physical therapy 85, no. 12 (2005): 1393-1394.
-
-
 # (PART) Part I: Causation & Inference {-#part1}
 
 
